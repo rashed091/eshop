@@ -1,0 +1,16 @@
+#Ignore files
+passwords.txt
+*.md
+**/*.class
+
+#Ignore node modules
+**/node_modules
+
+#Ignore folders
+coverage/
+.github/
+.vscode/
+logs/
+.cache
+e2e/
+playwright-report/

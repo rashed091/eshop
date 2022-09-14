@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: react-local
+    build:
+      context: .
+      dockerfile: ./docker/frontend/Dockerfile
+    restart: on-failure
+    volumes:
+      - ${PWD}:/app
+      - /app/node_modules
+    ports:
+      - 127.0.0.1:3690:3690
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: true
+
+  nginx:
+    container_name: nginx-production
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    restart: on-failure
+    ports:
+      - 127.0.0.1:80:80
+    environment:
+      NODE_ENV: production

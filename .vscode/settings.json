@@ -1,0 +1,13 @@
+{
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.organizeImports": true
+	},
+	"typescript.preferences.importModuleSpecifier": "relative",
+	"jest.showTerminalOnLaunch": false,
+
+}
