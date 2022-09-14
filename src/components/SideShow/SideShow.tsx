@@ -27,7 +27,7 @@ function SideShow() {
 
   const slides = images.map((url) => (
     <Carousel.Slide key={url}>
-      <AspectRatio ratio={720 / 1080} sx={{ maxWidth: 300 }} mx="auto">
+      <AspectRatio ratio={1 / 1} mx="auto">
         <Image src={url} />
       </AspectRatio>
     </Carousel.Slide>
