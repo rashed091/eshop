@@ -9,5 +9,5 @@
 	},
 	"typescript.preferences.importModuleSpecifier": "relative",
 	"jest.showTerminalOnLaunch": false,
-
+	"jest.autoRun": "off",
 }
